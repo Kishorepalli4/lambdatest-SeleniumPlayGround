@@ -90,7 +90,7 @@ public class SimpleTestScenario{
 	public void validateJavaScriptAlertBox() {
 		homePage= new HomePage(driver);
 		homePage.waitForLogoToLoad();
-		homePage.clickjavaScriptAlertsXpath();
+		homePage.clickJavaScriptAlertsXpath();
 		javaScriptAlertPage = new JavaScriptAlertPage(driver);
 		String expectedAlertMessage = "I am an alert box!";
 		String actualAlertMessage = javaScriptAlertPage.clickJavaScriptAlertAndGetMessage();
