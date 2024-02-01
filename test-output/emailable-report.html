@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Lambda Automation tests</th></tr>
+<tr><td><a href="#t0">Selenium Playground</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,435</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lambda Automation tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Selenium Playground &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.lambdatest.tests.SimpleTestScenario</td><td><a href="#m0">takeScreenshot</a></td><td rowspan="1">1706791008769</td><td rowspan="1">5</td></tr><tr><th colspan="4">Selenium Playground &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.lambdatest.tests.SimpleTestScenario</td><td><a href="#m1">validateTitleOfHomePage</a></td><td rowspan="1">1706791008114</td><td rowspan="1">37</td></tr><tr><th colspan="4">Selenium Playground &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.lambdatest.tests.SimpleTestScenario</td><td><a href="#m2">validateCheckBoxSelection</a></td><td rowspan="1">1706790986548</td><td rowspan="1">4804</td></tr><tr class="passedeven"><td><a href="#m3">validateJavaScriptAlertBox</a></td><td rowspan="1">1706790994716</td><td rowspan="1">3018</td></tr></tbody>
+</table>
+<h2>Selenium Playground</h2><h3 id="m0">com.lambdatest.tests.SimpleTestScenario#takeScreenshot</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=validateTitleOfHomePage status=FAILURE method=SimpleTestScenario.validateTitleOfHomePage()[pri:0, instance:com.lambdatest.tests.SimpleTestScenario@2313052e] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20240118164516, moz:debuggerAddress: 127.0.0.1:9438, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18932, moz:profile: C:\Users\palli\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9438/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:326)
+	at com.lambdatest.tests.SimpleTestScenario.takeScreenshot(SimpleTestScenario.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.lambdatest.tests.SimpleTestScenario#validateTitleOfHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Expected Title is different from Actual title 
+Expected is: LambdaTest
+Actual is: Selenium Grid Online | Run Selenium Test On Cloud expected [LambdaTest] but found [Selenium Grid Online | Run Selenium Test On Cloud]
+	at com.lambdatest.tests.SimpleTestScenario.validateTitleOfHomePage(SimpleTestScenario.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.lambdatest.tests.SimpleTestScenario#validateCheckBoxSelection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.lambdatest.tests.SimpleTestScenario#validateJavaScriptAlertBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

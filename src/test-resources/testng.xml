@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lambda Automation tests" >
+  <parameter name="seleniumVersion" value="4"/>
+
+    <test name="Chrome Test on Windows 10">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browserVersion" value="88.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="runOnGrid" value="False"/>
+        <classes>
+            <class name="com.lambdatest.tests.TestScenario"/>
+        </classes>
+    </test>
+
+    <test name="MicrosoftEdge Test on macOS Sierra">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="browserVersion" value="87.0"/>
+        <parameter name="platform" value="macOS Sierra"/>
+        <parameter name="runOnGrid" value="False"/>
+
+        <classes>
+            <class name="com.lambdatest.tests.TestScenario"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Test on Windows 7">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="browserVersion" value="82.0"/>
+        <parameter name="platform" value="Windows 7"/>
+        <parameter name="runOnGrid" value="False"/>
+        <classes>
+            <class name="com.lambdatest.tests.TestScenario"/>
+        </classes>
+    </test>
+
+    <test name="Internet Explorer Test on Windows 10">
+        <parameter name="browser" value="internet explorer"/>
+        <parameter name="browserVersion" value="11.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="runOnGrid" value="False"/>
+        <classes>
+            <class name="com.lambdatest.tests.TestScenario"/>
+        </classes>
+    </test>
+</suite>

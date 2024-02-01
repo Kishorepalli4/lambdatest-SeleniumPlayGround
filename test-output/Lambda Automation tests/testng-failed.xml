@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Lambda Automation tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Selenium Playground(failed)">
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.lambdatest.tests.SimpleTestScenario">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="takeScreenshot"/>
+          <include name="validateTitleOfHomePage"/>
+        </methods>
+      </class> <!-- com.lambdatest.tests.SimpleTestScenario -->
+    </classes>
+  </test> <!-- Selenium Playground(failed) -->
+</suite> <!-- Failed suite [Lambda Automation tests] -->
